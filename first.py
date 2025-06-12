@@ -35,4 +35,3 @@ plt.xlim(-3, 3)
 plt.xlabel("Input")
 plt.ylabel("Output")
 plt.show()
-
