@@ -21,3 +21,18 @@ plt.ylabel("Target y")
 w, b = model.weights # you could also use model.get_weights() here
 plt.title("Weight: {:0.2f}\nBias: {:0.2f}".format(w[0][0], b[0]))
 plt.show()
+
+#page 2, deep neural networks
+#can change this to 'elu', 'selu', 'swish'
+activation_layer = layers.Activation('selu')
+
+x = tf.linspace(-3.0, 3.0, 100)
+y = activation_layer(x) # once created, a layer is callable just like a function
+
+plt.figure(dpi=100)
+plt.plot(x, y)
+plt.xlim(-3, 3)
+plt.xlabel("Input")
+plt.ylabel("Output")
+plt.show()
+
